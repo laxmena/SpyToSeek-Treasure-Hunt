@@ -1,0 +1,244 @@
+.accordion__toggle {
+  padding: 20px 40px;
+  border-top: 0.5px solid #eee;
+  transition: 300ms;
+}
+.accordion__toggle--last {
+  border-bottom: 1px solid #eee;
+}
+.accordion__toggle--active {
+  border: 1px solid #616161;
+  border-bottom-color: #616161 !important;
+  background-color: #616161;
+  color: #fff;
+}
+.accordion__section {
+  position: relative;
+  text-align: center;
+}
+.accordion__section > div {
+  position: relative;
+  margin: auto;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+.accordion__section p {
+  max-width: 400px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.8;
+}
+.accordion__section p:last-child {
+  padding-bottom: 20px;
+}
+.accordion .tab-teaser__background {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.accordion__toggle {
+  -webkit-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #ededed;
+}
+.accordion__toggle:before {
+  content: '';
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin: 0 15px 0 0;
+  border-style: solid;
+  border-width: 7px 0 7px 11px;
+  border-color: transparent transparent transparent #757575;
+  transition: transform 400ms;
+}
+.accordion__toggle--hover {
+  transition: background-color 200ms linear;
+}
+.accordion__toggle--hover:hover {
+  background-color: #f9f9f9;
+}
+.accordion__toggle--active:before {
+  transform: rotate(90deg);
+}
+.accordion__toggle--no-arrow:before {
+  display: none;
+}
+.accordion {
+  display: block;
+}
+.accordion__section {
+  display: block;
+  position: relative;
+  max-height: 0px;
+  overflow: hidden;
+  transition: max-height 800ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+.accordion__section--active {
+  max-height: 1000px;
+}
+.component-nav__ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+.tile-teaser,
+.tab-teaser,
+.btn-teaser {
+  position: relative;
+}
+.tile-teaser__tab,
+.tab-teaser__tab,
+.btn-teaser__tab {
+  position: relative;
+  overflow: hidden;
+}
+.tab-teaser__background,
+.tile-teaser__background {
+  z-index: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: calc(100% + 100px);
+  height: calc(100% + 200px);
+  margin: -50px;
+  background-position: 50%;
+  background-size: cover;
+  background-color: rgba(0,0,0,0.7);
+}
+.tab-teaser__tab-content,
+.tile-teaser__tab-content,
+.btn-teaser__tab-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.tile-teaser__tab-content > div,
+.tab-teaser__tab-content > div,
+.tab-teaser__tab-inner-content {
+  position: relative;
+  z-index: 100;
+  width: 400px;
+  max-width: 100%;
+  font-size: 18px;
+  text-align: center;
+  color: #fff;
+}
+.tile-teaser__tab-content > div *,
+.tab-teaser__tab-content > div *,
+.tab-teaser__tab-inner-content * {
+  position: relative;
+}
+.tile-teaser__tab-content > div p,
+.tab-teaser__tab-content > div p,
+.tab-teaser__tab-inner-content p {
+  line-height: 1.6;
+  padding-bottom: 20px;
+}
+.tile-teaser .accordion__section *:not(.tab-teaser__background):not(.tile-teaser__background),
+.tab-teaser .accordion__section *:not(.tab-teaser__background):not(.tile-teaser__background) {
+  position: relative;
+  color: #fff;
+}
+.tile-teaser .accordion__section h2,
+.tab-teaser .accordion__section h2 {
+  margin-top: 0;
+}
+.tile-teaser .accordion__section .card p,
+.tab-teaser .accordion__section .card p {
+  color: #424242;
+}
+.tile-teaser .accordion .component-nav__item,
+.tab-teaser .accordion .component-nav__item {
+  padding: 20px 30px;
+}
+.tile-teaser .accordion .component-nav__item--active,
+.tab-teaser .accordion .component-nav__item--active {
+  background-color: #616161;
+  color: #fff;
+}
+.component-nav__tile-btn {
+  cursor: pointer;
+  z-index: 1;
+  top: 1px;
+  height: calc(100% - 1px);
+  width: 30px;
+  background-color: rgba(204,204,204,0.95);
+  transition: 300ms;
+}
+.component-nav__tile-btn--left {
+  left: 0;
+}
+.component-nav__tile-btn--right {
+  right: 0;
+}
+.tab-teaser .component-nav {
+  background-color: #eee;
+}
+.tab-teaser .component-nav__item {
+  -webkit-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  padding: 20px 30px !important;
+  font-weight: bold;
+  color: #666;
+  transition: 300ms;
+}
+.tab-teaser .component-nav__item--active {
+  background-color: #6aaf4e;
+  color: #fff;
+}
+.tab-teaser__tab {
+  height: 600px;
+  width: 100%;
+}
+.tile-teaser .component-nav {
+  background-color: #212121;
+}
+.tile-teaser .component-nav__ul {
+  flex-wrap: wrap;
+  border-top: 1px solid #4d4d4d;
+}
+.tile-teaser .component-nav__item {
+  -webkit-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  width: 25%;
+  height: 200px;
+  line-height: 200px;
+  padding: 0 30px;
+  font-weight: 300;
+  font-size: 24px;
+  color: #fff;
+  text-align: center;
+  border-right: 1px solid #4d4d4d;
+  transition: background-color 200ms;
+}
+.tile-teaser .component-nav__item:hover:not(.component-nav__item--active) {
+  background-color: #353535;
+}
+.tile-teaser .component-nav__item:nth-child(4n) {
+  border-right: 0;
+}
+.tile-teaser .component-nav__item:nth-child(n+5) {
+  border-top: 1px solid #4d4d4d;
+}
+.tile-teaser .component-nav__item--active {
+  background-color: #00acc1;
+}
+.tile-teaser__tab {
+  height: 400px;
+}

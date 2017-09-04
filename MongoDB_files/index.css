@@ -1,0 +1,146 @@
+.header__content {
+  position: absolute;
+  left: 50%;
+  top: 200px;
+  opacity: 1;
+  transform: translateY(0px);
+  width: 1200px;
+  margin: 0 -600px;
+}
+@media (max-width: 1360px) {
+  .header__content {
+    width: 600px;
+    margin: 0 -300px;
+  }
+}
+@media (max-width: 690px) {
+  .header__content {
+    width: 100%;
+    left: 0;
+    margin: 0;
+  }
+}
+.accordion__toggle {
+  border-bottom-color: #ccc;
+}
+.tab-teaser .component-nav__ul {
+  background-color: #f5f5f5;
+}
+.tab-teaser .component-nav__item {
+  font-size: 24px;
+  width: 200px;
+  font-weight: 300;
+  text-align: center;
+}
+.tile-teaser,
+main > div {
+  max-width: 1650px;
+  margin: auto;
+}
+.tile-teaser .component-nav {
+  overflow-y: auto;
+  max-width: 100%;
+  background-color: transparent;
+}
+.tile-teaser .component-nav__ul {
+  width: 1650px;
+  flex-wrap: nowrap;
+  border-top: 1px solid #eee;
+  border-bottom: solid 1px #eee;
+}
+.tile-teaser .component-nav__item {
+  -webkit-user-select: none;
+          user-select: none;
+  cursor: pointer;
+  width: 150px;
+  height: 150px;
+  padding: 0 30px;
+  background-color: #fff;
+  font-weight: 300;
+  font-size: 24px;
+  border: solid 1px #eee !important;
+  text-align: center;
+  transition: 300ms;
+}
+.tile-teaser .component-nav__item--active {
+  background-color: #eee;
+  box-shadow: inset 0 -3px 50px 1px #d3d3d3;
+}
+.tile-teaser__background {
+  background-color: transparent;
+}
+.tile-teaser {
+  position: relative;
+}
+.tile-teaser__tab {
+  overflow: hidden;
+  position: relative;
+  height: 400px;
+}
+.tile-teaser__tab-content > div p {
+  padding-bottom: 0;
+}
+.product-tabs-container,
+.product-tabs-container > div {
+  width: 100%;
+}
+.product-tabs-container .accordion__section > div {
+  padding: 30px 0;
+}
+.product-tabs-container .accordion__toggle {
+  padding: 0;
+  border: 1px solid transparent;
+}
+.product-tabs-container .accordion__toggle.accordion__toggle--active {
+  background-color: transparent;
+  color: inherit;
+}
+.product-tabs-container .accordion__toggle.accordion__toggle--active button {
+  background-color: #efefef;
+}
+.product-tabs-container .accordion__toggle .btn-hollow {
+  width: 100%;
+  margin: 10px 0;
+}
+.btn-teaser {
+  height: 420px;
+  width: 100%;
+}
+.btn-teaser img {
+  height: 300px;
+  float: right;
+}
+.btn-teaser .component-nav__item--active button {
+  background-color: #efefef;
+}
+.btn-teaser__tab {
+  height: 360px;
+}
+.bg-card {
+  width: 360px !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 500px;
+  box-shadow: 0 2px 4px 0 rgba(0,0,0,0.1);
+}
+.bg-card > div:nth-child(1) {
+  margin-top: 158px;
+  padding: 0 30px;
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+}
+.bg-card > p {
+  margin: 0 30px;
+}
+.bg-card button {
+  margin: 30px;
+}
+@media (max-width: 1438px) {
+  .header__video {
+    height: 100%;
+    width: auto;
+    left: 50%;
+    margin-left: -710px;
+  }
+}
