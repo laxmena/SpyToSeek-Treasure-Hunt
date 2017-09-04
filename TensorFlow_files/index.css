@@ -1,0 +1,30 @@
+.devsite-collapsible-section {
+  background: url('/images/hero-bg@2x.jpg') 0 45% / cover no-repeat;
+}
+.devsite-landing-page .devsite-product-description-row {
+  max-width: 500px;
+}
+.devsite-product-description {
+  font: 300 34px/40px Roboto, sans-serif;
+}
+.devsite-header-no-lower-tabs .devsite-product-id-row {
+  display: block;
+  padding: 40px 24px;
+}
+.devsite-product-button-row {
+  margin: 16px 0 0;
+  text-align: left;
+}
+.devsite-landing-row.devsite-background > h2 {
+  margin-top: 0;
+}
+.tf-row-centered {
+  text-align: center;
+}
+
+/* Media Queries */
+@media screen and (max-width: 720px) {
+  .devsite-header-no-lower-tabs .devsite-product-id-row {
+    padding: 40px 16px;
+  }
+}

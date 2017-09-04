@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html ng-app="coala" class="ng-scope"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style>.gitter-hidden{box-sizing:border-box;display:none}.gitter-icon{box-sizing:border-box;width:22px;height:22px;fill:currentColor}.gitter-chat-embed{box-sizing:border-box;z-index:100;position:fixed;top:0;left:60%;bottom:0;right:0;display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-orient:horizontal;-webkit-box-direction:normal;-ms-flex-direction:row;flex-direction:row;background-color:#fff;border-left:1px solid #333;box-shadow:-12px 0 18px 0 rgba(50,50,50,.3);-webkit-transition:-webkit-transform .3s cubic-bezier(.16,.22,.22,1.7);transition:-webkit-transform .3s cubic-bezier(.16,.22,.22,1.7);transition:transform .3s cubic-bezier(.16,.22,.22,1.7);transition:transform .3s cubic-bezier(.16,.22,.22,1.7),-webkit-transform .3s cubic-bezier(.16,.22,.22,1.7)}@context border-box{.gitter-chat-embed{box-sizing:border-box;background-color:#fff}}.gitter-chat-embed.is-collapsed:not(.is-loading){box-sizing:border-box;-webkit-transform:translateX(110%);transform:translateX(110%)}.gitter-chat-embed:after{box-sizing:border-box;content:'';z-index:-1;position:absolute;top:0;left:100%;bottom:0;right:-100%;background-color:#fff}@context border-box{.gitter-chat-embed:after{box-sizing:border-box;background-color:#fff}}@media(max-width:1150px){.gitter-chat-embed{box-sizing:border-box;left:45%}}@media(max-width:944px){.gitter-chat-embed{box-sizing:border-box;left:30%}}@media(max-width:600px){.gitter-chat-embed{box-sizing:border-box;left:15%}}@media(max-width:500px){.gitter-chat-embed{box-sizing:border-box;left:0;border-left:none}}.gitter-chat-embed>iframe{box-sizing:border-box;-webkit-box-flex:1;-ms-flex:1;flex:1;width:100%;height:100%;border:0}.gitter-chat-embed-loading-wrapper{box-sizing:border-box;position:absolute;top:0;left:0;bottom:0;right:0;display:none;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;-ms-grid-row-align:center;align-items:center}.is-loading .gitter-chat-embed-loading-wrapper{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex}.gitter-chat-embed-loading-indicator{box-sizing:border-box;opacity:.75;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzkyIDE3OTIiIGZpbGw9IiMzYTMxMzMiPjxwYXRoIGQ9Ik01MjYgMTM5NHEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41cS01MiAwLTkwLTM4dC0zOC05MHEwLTUzIDM3LjUtOTAuNXQ5MC41LTM3LjUgOTAuNSAzNy41IDM3LjUgOTAuNXptNDk4IDIwNnEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41LTkwLjUtMzcuNS0zNy41LTkwLjUgMzcuNS05MC41IDkwLjUtMzcuNSA5MC41IDM3LjUgMzcuNSA5MC41em0tNzA0LTcwNHEwIDUzLTM3LjUgOTAuNXQtOTAuNSAzNy41LTkwLjUtMzcuNS0zNy41LTkwLjUgMzcuNS05MC41IDkwLjUtMzcuNSA5MC41IDM3LjUgMzcuNSA5MC41em0xMjAyIDQ5OHEwIDUyLTM4IDkwdC05MCAzOHEtNTMgMC05MC41LTM3LjV0LTM3LjUtOTAuNSAzNy41LTkwLjUgOTAuNS0zNy41IDkwLjUgMzcuNSAzNy41IDkwLjV6bS05NjQtOTk2cTAgNjYtNDcgMTEzdC0xMTMgNDctMTEzLTQ3LTQ3LTExMyA0Ny0xMTMgMTEzLTQ3IDExMyA0NyA0NyAxMTN6bTExNzAgNDk4cTAgNTMtMzcuNSA5MC41dC05MC41IDM3LjUtOTAuNS0zNy41LTM3LjUtOTAuNSAzNy41LTkwLjUgOTAuNS0zNy41IDkwLjUgMzcuNSAzNy41IDkwLjV6bS02NDAtNzA0cTAgODAtNTYgMTM2dC0xMzYgNTYtMTM2LTU2LTU2LTEzNiA1Ni0xMzYgMTM2LTU2IDEzNiA1NiA1NiAxMzZ6bTUzMCAyMDZxMCA5My02NiAxNTguNXQtMTU4IDY1LjVxLTkzIDAtMTU4LjUtNjUuNXQtNjUuNS0xNTguNXEwLTkyIDY1LjUtMTU4dDE1OC41LTY2cTkyIDAgMTU4IDY2dDY2IDE1OHoiLz48L3N2Zz4=);-webkit-animation:spin 2s infinite linear;animation:spin 2s infinite linear}@-webkit-keyframes spin{0%{box-sizing:border-box;-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{box-sizing:border-box;-webkit-transform:rotate(359.9deg);transform:rotate(359.9deg)}}@keyframes spin{0%{box-sizing:border-box;-webkit-transform:rotate(0deg);transform:rotate(0deg)}to{box-sizing:border-box;-webkit-transform:rotate(359.9deg);transform:rotate(359.9deg)}}.gitter-chat-embed-action-bar{position:absolute;top:0;left:0;right:0;-webkit-box-pack:end;-ms-flex-pack:end;justify-content:flex-end;padding-bottom:.7em;background:-webkit-linear-gradient(top,#fff,#fff 50%,hsla(0,0%,100%,0));background:linear-gradient(180deg,#fff 0,#fff 50%,hsla(0,0%,100%,0))}.gitter-chat-embed-action-bar,.gitter-chat-embed-action-bar-item{box-sizing:border-box;display:-webkit-box;display:-ms-flexbox;display:flex}.gitter-chat-embed-action-bar-item{-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;width:40px;height:40px;padding-left:0;padding-right:0;opacity:.65;background:none;background-position:50%;background-repeat:no-repeat;background-size:22px 22px;border:0;outline:none;cursor:pointer;cursor:hand;-webkit-transition:all .2s ease;transition:all .2s ease}.gitter-chat-embed-action-bar-item:focus,.gitter-chat-embed-action-bar-item:hover{box-sizing:border-box;opacity:1}.gitter-chat-embed-action-bar-item:active{box-sizing:border-box;-webkit-filter:hue-rotate(80deg) saturate(150);filter:hue-rotate(80deg) saturate(150)}.gitter-chat-embed-action-bar-item-pop-out{box-sizing:border-box;margin-right:-4px;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyMDAgMTcxLjQyOSIgZmlsbD0iIzNhMzEzMyI+PHBhdGggZD0iTTE1Ny4xNDMsMTAzLjU3MXYzNS43MTRjMCw4Ljg1NC0zLjE0NCwxNi40MjYtOS40MzEsMjIuNzEzcy0xMy44NTgsOS40MzEtMjIuNzEyLDkuNDMxSDMyLjE0MyBjLTguODU0LDAtMTYuNDI1LTMuMTQ0LTIyLjcxMi05LjQzMVMwLDE0OC4xNCwwLDEzOS4yODVWNDYuNDI5YzAtOC44NTQsMy4xNDQtMTYuNDI1LDkuNDMxLTIyLjcxMiBjNi4yODctNi4yODcsMTMuODU4LTkuNDMxLDIyLjcxMi05LjQzMWg3OC41NzJjMS4wNDEsMCwxLjg5NiwwLjMzNSwyLjU2NiwxLjAwNGMwLjY3LDAuNjcsMS4wMDQsMS41MjUsMS4wMDQsMi41NjdWMjUgYzAsMS4wNDItMC4zMzQsMS44OTctMS4wMDQsMi41NjdjLTAuNjcsMC42Ny0xLjUyNSwxLjAwNC0yLjU2NiwxLjAwNEgzMi4xNDNjLTQuOTExLDAtOS4xMTUsMS43NDktMTIuNjEyLDUuMjQ2IHMtNS4yNDYsNy43MDEtNS4yNDYsMTIuNjEydjkyLjg1NmMwLDQuOTExLDEuNzQ5LDkuMTE1LDUuMjQ2LDEyLjYxMnM3LjcwMSw1LjI0NSwxMi42MTIsNS4yNDVIMTI1YzQuOTEsMCw5LjExNS0xLjc0OCwxMi42MTEtNS4yNDUgYzMuNDk3LTMuNDk3LDUuMjQ2LTcuNzAxLDUuMjQ2LTEyLjYxMnYtMzUuNzE0YzAtMS4wNDIsMC4zMzQtMS44OTcsMS4wMDQtMi41NjdjMC42Ny0wLjY2OSwxLjUyNS0xLjAwNCwyLjU2Ny0xLjAwNGg3LjE0MyBjMS4wNDIsMCwxLjg5NywwLjMzNSwyLjU2NywxLjAwNEMxNTYuODA5LDEwMS42NzQsMTU3LjE0MywxMDIuNTI5LDE1Ny4xNDMsMTAzLjU3MXogTTIwMCw3LjE0M3Y1Ny4xNDMgYzAsMS45MzUtMC43MDcsMy42MDktMi4xMjEsNS4wMjJjLTEuNDEzLDEuNDE0LTMuMDg4LDIuMTIxLTUuMDIxLDIuMTIxYy0xLjkzNSwwLTMuNjA5LTAuNzA3LTUuMDIyLTIuMTIxbC0xOS42NDQtMTkuNjQzIGwtNzIuNzY3LDcyLjc2OWMtMC43NDQsMC43NDQtMS42LDEuMTE1LTIuNTY3LDEuMTE1cy0xLjgyMy0wLjM3MS0yLjU2Ny0xLjExNUw3Ny41NjcsMTA5LjcxYy0wLjc0NC0wLjc0NC0xLjExNi0xLjYtMS4xMTYtMi41NjcgYzAtMC45NjcsMC4zNzItMS44MjIsMS4xMTYtMi41NjZsNzIuNzY4LTcyLjc2OGwtMTkuNjQ0LTE5LjY0M2MtMS40MTMtMS40MTQtMi4xMi0zLjA4OC0yLjEyLTUuMDIyYzAtMS45MzUsMC43MDctMy42MDksMi4xMi01LjAyMiBDMTMyLjEwNSwwLjcwNywxMzMuNzc5LDAsMTM1LjcxNSwwaDU3LjE0M2MxLjkzNCwwLDMuNjA4LDAuNzA3LDUuMDIxLDIuMTIxQzE5OS4yOTMsMy41MzQsMjAwLDUuMjA4LDIwMCw3LjE0M3oiLz48L3N2Zz4=)}.gitter-chat-embed-action-bar-item-collapse-chat{box-sizing:border-box;background-image:url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNzEuNDI5IDE3MS40MjkiIGZpbGw9IiMzYTMxMzMiPjxwYXRoIGQ9Ik0xMjIuNDMzLDEwNi4xMzhsLTE2LjI5NSwxNi4yOTVjLTAuNzQ0LDAuNzQ0LTEuNiwxLjExNi0yLjU2NiwxLjExNmMtMC45NjgsMC0xLjgyMy0wLjM3Mi0yLjU2Ny0xLjExNmwtMTUuMjktMTUuMjkgbC0xNS4yOSwxNS4yOWMtMC43NDQsMC43NDQtMS42LDEuMTE2LTIuNTY3LDEuMTE2cy0xLjgyMy0wLjM3Mi0yLjU2Ny0xLjExNmwtMTYuMjk0LTE2LjI5NWMtMC43NDQtMC43NDQtMS4xMTYtMS42LTEuMTE2LTIuNTY2IGMwLTAuOTY4LDAuMzcyLTEuODIzLDEuMTE2LTIuNTY3bDE1LjI5LTE1LjI5bC0xNS4yOS0xNS4yOWMtMC43NDQtMC43NDQtMS4xMTYtMS42LTEuMTE2LTIuNTY3czAuMzcyLTEuODIzLDEuMTE2LTIuNTY3IEw2NS4yOSw0OC45OTZjMC43NDQtMC43NDQsMS42LTEuMTE2LDIuNTY3LTEuMTE2czEuODIzLDAuMzcyLDIuNTY3LDEuMTE2bDE1LjI5LDE1LjI5bDE1LjI5LTE1LjI5IGMwLjc0NC0wLjc0NCwxLjYtMS4xMTYsMi41NjctMS4xMTZjMC45NjcsMCwxLjgyMiwwLjM3MiwyLjU2NiwxLjExNmwxNi4yOTUsMTYuMjk0YzAuNzQ0LDAuNzQ0LDEuMTE2LDEuNiwxLjExNiwyLjU2NyBzLTAuMzcyLDEuODIzLTEuMTE2LDIuNTY3bC0xNS4yOSwxNS4yOWwxNS4yOSwxNS4yOWMwLjc0NCwwLjc0NCwxLjExNiwxLjYsMS4xMTYsMi41NjcgQzEyMy41NDksMTA0LjUzOSwxMjMuMTc3LDEwNS4zOTQsMTIyLjQzMywxMDYuMTM4eiBNMTQ2LjQyOSw4NS43MTRjMC0xMS4wMTItMi43MTctMjEuMTY4LTguMTQ4LTMwLjQ2OSBzLTEyLjc5Ny0xNi42NjctMjIuMDk4LTIyLjA5OFM5Ni43MjYsMjUsODUuNzE0LDI1cy0yMS4xNjgsMi43MTYtMzAuNDY5LDguMTQ3UzM4LjU3OSw0NS45NDUsMzMuMTQ3LDU1LjI0NlMyNSw3NC43MDMsMjUsODUuNzE0IHMyLjcxNiwyMS4xNjgsOC4xNDcsMzAuNDY5czEyLjc5NywxNi42NjYsMjIuMDk4LDIyLjA5OHMxOS40NTcsOC4xNDgsMzAuNDY5LDguMTQ4czIxLjE2OC0yLjcxNywzMC40NjktOC4xNDggczE2LjY2Ni0xMi43OTcsMjIuMDk4LTIyLjA5OFMxNDYuNDI5LDk2LjcyNiwxNDYuNDI5LDg1LjcxNHogTTE3MS40MjksODUuNzE0YzAsMTUuNTUxLTMuODMyLDI5Ljg5My0xMS40OTYsNDMuMDI0IGMtNy42NjQsMTMuMTMzLTE4LjA2MiwyMy41My0zMS4xOTQsMzEuMTk0Yy0xMy4xMzIsNy42NjQtMjcuNDc0LDExLjQ5Ni00My4wMjQsMTEuNDk2cy0yOS44OTItMy44MzItNDMuMDI0LTExLjQ5NiBjLTEzLjEzMy03LjY2NC0yMy41MzEtMTguMDYyLTMxLjE5NC0zMS4xOTRDMy44MzIsMTE1LjYwNywwLDEwMS4yNjUsMCw4NS43MTRTMy44MzIsNTUuODIyLDExLjQ5Niw0Mi42OSBjNy42NjQtMTMuMTMzLDE4LjA2Mi0yMy41MzEsMzEuMTk0LTMxLjE5NEM1NS44MjIsMy44MzIsNzAuMTY0LDAsODUuNzE0LDBzMjkuODkzLDMuODMyLDQzLjAyNCwxMS40OTYgYzEzLjEzMyw3LjY2NCwyMy41MywxOC4wNjIsMzEuMTk0LDMxLjE5NEMxNjcuNTk3LDU1LjgyMiwxNzEuNDI5LDcwLjE2NCwxNzEuNDI5LDg1LjcxNHoiLz48L3N2Zz4=)}.gitter-open-chat-button{z-index:100;position:fixed;bottom:0;right:10px;padding:1em 3em;background-color:#36bc98;border:0;border-top-left-radius:.5em;border-top-right-radius:.5em;font-family:sans-serif;font-size:12px;letter-spacing:1px;text-transform:uppercase;text-align:center;text-decoration:none;cursor:pointer;cursor:hand;-webkit-transition:all .3s ease;transition:all .3s ease}.gitter-open-chat-button,.gitter-open-chat-button:visited{box-sizing:border-box;color:#fff}.gitter-open-chat-button:focus,.gitter-open-chat-button:hover{box-sizing:border-box;background-color:#3ea07f;color:#fff}.gitter-open-chat-button:focus{box-sizing:border-box;box-shadow:0 0 8px rgba(62,160,127,.6);outline:none}.gitter-open-chat-button:active{box-sizing:border-box;color:#eee}.gitter-open-chat-button.is-collapsed{box-sizing:border-box;-webkit-transform:translateY(120%);transform:translateY(120%)}</style><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+<title>coala</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script async="" src="coala_files/analytics.js"></script><script src="coala_files/jquery.js"></script>
+<script src="coala_files/angular.js"></script>
+<script src="coala_files/angular-route.js"></script>
+<script src="coala_files/materialize.js"></script>
+<script src="coala_files/config.js"></script>
+<script src="coala_files/snippets.js"></script>
+<script src="coala_files/exts.js"></script>
+<script src="coala_files/angular-sanitize.js"></script>
+<script src="coala_files/showdown.js"></script>
+<script src="coala_files/markdown.js"></script>
+<script src="coala_files/app.js"></script>
+<script src="coala_files/analytics_002.js"></script>
+<script src="coala_files/homeDirective.js"></script>
+<script src="coala_files/aboutDirective.js"></script>
+<script src="coala_files/languagesDirective.js"></script>
+<script src="coala_files/getinvolvedDirective.js"></script>
+<script src="coala_files/coalaOnlineDirective.js"></script>
+<script src="coala_files/peopleDirective.js"></script>
+<script src="coala_files/js-yaml.js"></script>
+<link rel="stylesheet" href="coala_files/materialize.css">
+<link rel="stylesheet" href="coala_files/coala.css">
+<link href="coala_files/css.css" rel="stylesheet">
+<link href="coala_files/icon.css" rel="stylesheet">
+<link href="coala_files/font-awesome.css" rel="stylesheet">
+<link rel="shortcut icon" href="https://coala.io/favicon.ico" type="image/x-icon">
+<script src="coala_files/ngStorage.js"></script>
+<style id="style-1-cropbar-clipper">/* Copyright 2014 Evernote Corporation. All rights reserved. */
+.en-markup-crop-options {
+    top: 18px !important;
+    left: 50% !important;
+    margin-left: -100px !important;
+    width: 200px !important;
+    border: 2px rgba(255,255,255,.38) solid !important;
+    border-radius: 4px !important;
+}
+
+.en-markup-crop-options div div:first-of-type {
+    margin-left: 0px !important;
+}
+</style></head>
+<body>
+<main>
+<div ng-controller="TabController as tc" class="ng-scope">
+<div class="tab-container">
+<div class="row">
+<nav>
+<div class="col s12 nav-wrapper">
+<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+<ul class="tabs hide-on-med-and-down">
+<li class="tab"><a ng-click="tc.setTab('/home')" ng-class="{active:tc.isSet('/home')}" class="active" style="">Home</a></li>
+<li class="tab"><a ng-click="tc.setTab('/about')" ng-class="{active:tc.isSet('/about')}">About</a></li>
+<li class="tab"><a ng-click="tc.setTab('/languages')" ng-class="{active:tc.isSet('/languages')}">Languages</a></li>
+<li class="tab"><a ng-click="tc.setTab('/getinvolved')" ng-class="{active:tc.isSet('/getinvolved')}">Get Involved</a></li>
+<li class="tab"><a ng-click="tc.setTab('/coalaonline')" ng-class="{active:tc.isSet('/coalaonline')}"><span class="lowercase">c</span>OALA Online<span class="new badge" data-badge-caption="">beta</span></a></li>
+<div class="indicator" style="right: 1466px; left: 0px;"></div></ul>
+<ul class="side-nav" id="mobile-demo" style="transform: translateX(-100%);">
+<li class="tab col s12"><a ng-click="tc.setTab('/home')" ng-class="{active:tc.isSet('/home')}" class="active">Home</a></li>
+<li class="tab col s12"><a ng-click="tc.setTab('/about')" ng-class="{active:tc.isSet('/about')}">About</a></li>
+<li class="tab col s12"><a ng-click="tc.setTab('/languages')" ng-class="{active:tc.isSet('/languages')}">Languages</a></li>
+<li class="tab col s12"><a ng-click="tc.setTab('/getinvolved')" ng-class="{active:tc.isSet('/getinvolved')}">Get Involved</a></li>
+<li class="tab col s12"><a ng-click="tc.setTab('/coalaonline')" ng-class="{active:tc.isSet('/coalaonline')}"><span class="lowercase">c</span>OALA Online<span class="new badge" data-badge-caption="">beta</span></a></li>
+</ul>
+</div>
+</nav>
+</div>
+</div>
+<!-- ngView: --><div ng-view="" class="ng-scope"><home class="ng-scope"> <div class="home">
+<div class="row">
+<div class="col m6 s12">
+<center>
+<img class="logo center" src="coala_files/coala_logo.svg">
+</center>
+</div>
+<div class="col m6 s12">
+<div class="title flow-text">coala</div>
+<ul class="center row flow-text no-margin">
+<li class="col m4 col s4"><a class="chip" href="https://docs.coala.io/"><i class="fa fa-book" aria-hidden="true"></i>DOCS</a></li>
+<li class="col m4 col s4"><a class="chip" href="https://github.com/coala/coala/"><i class="fa fa-code" aria-hidden="true"></i>SOURCE</a></li>
+<li class="col m4 col s4"><a class="chip" href="https://coala.io/chat"><i class="fa fa-commenting-o" aria-hidden="true"></i>CHAT</a></li>
+</ul>
+<h4 class="center light">linting and fixing code for all languages</h4>
+</div>
+</div>
+</div>
+<section id="installation">
+<div class="container">
+<div class="install-tip">
+<h2 class="fine">install coala</h2>
+<div class="thin-row-small row no-border">
+<div class="col m6 s12">
+<h5 class="light">simply install coala</h5>
+<p>If any kind of dependency errors occur, use a virtualenv!</p>
+<p>
+For the full installation documentation, check
+<a href="https://coala.io/install">coala.io/install</a>
+</p>
+</div>
+<div class="col m6 s12">
+<pre class="card card-content">$ pip3 install coala-bears</pre>
+<p>You can append --pre to that command to get the latest prerelease straight from master!</p>
+<p>Consider using a virtualenv:</p>
+<pre class="card card-content">$ pip3 install virtualenv
+$ virtualenv venv        # On Linux
+$ venv\scripts\activate  # On Windows
+</pre>
+</div>
+</div>
+<div class="divider"></div>
+<div class="thin-row-small row">
+<div class="col m6 s12">
+<h5 class="light">get it in docker</h5>
+<p>The most simple way to get the full functionality if you use docker.</p>
+</div>
+<div class="col m6 s12">
+<pre class="card card-content">$ docker run -ti -v $(pwd):/app --workdir=/app coala/base coala --version</pre>
+<p>
+For more information, check out
+<a href="https://coala.io/install#using-coala-with-docker">
+our docker documentation
+</a>.
+</p>
+</div>
+</div>
+<div class="divider"></div>
+<div class="thin-row-small row">
+<div class="col m6 s12">
+<h5 class="light">coala is available in a lot of editors!</h5>
+</div>
+<div class="col m6 s12">
+<h5>
+<a href="https://github.com/coala/coala-atom/">Atom</a> |
+<a href="https://github.com/coala/coala-sublime/">Sublime Text</a> |
+<a href="https://github.com/coala/coala-vim/">Vim</a> |
+<a href="https://github.com/coala/coala-vs-code/">VS Code</a> |
+<a href="https://github.com/coala/coala-emacs/">Emacs</a>
+</h5>
+</div>
+</div>
+</div>
+<div class="center">
+Please give us feedback at <a href="http://coala.io/usability">coala.io/usability</a>.<br>
+For commercial support, contact <a href="mailto:support@coala.io">support@coala.io</a>.
+</div>
+</div>
+</section>
+<section ng-controller="SnippetController as sc" class="ng-scope">
+<div class="container">
+<div class="examples">
+<h2 class="fine">get started</h2></div>
+<div class="row">
+ <div class="col m4 s12">
+<br>
+<div class="select-wrapper ng-pristine ng-untouched ng-valid ng-not-empty"><span class="caret">▼</span><input class="select-dropdown" readonly="true" data-activates="select-options-680aaebc-bfbf-5ece-cde7-ab0656198e5a" value="Python" type="text"><ul id="select-options-680aaebc-bfbf-5ece-cde7-ab0656198e5a" class="dropdown-content select-dropdown "><li class="disabled "><span>Choose a Language</span></li><li class=""><span>C</span></li><li class=""><span>CSS</span></li><li class=""><span>English</span></li><li class=""><span>Haskell</span></li><li class=""><span>HTML</span></li><li class=""><span>JavaScript</span></li><li class=""><span>JSON</span></li><li class=""><span>Markdown</span></li><li class=""><span>PHP</span></li><li class=""><span>Python</span></li><li class=""><span>R</span></li><li class=""><span>reStructuredText</span></li><li class=""><span>Ruby</span></li><li class=""><span>Typescript</span></li><li class=""><span>YAML</span></li></ul><select ng-init="sc.lang_selected='Python'" ng-model="sc.lang_selected" ng-options="lang for lang in sc.languages" class="ng-pristine ng-untouched ng-valid ng-not-empty initialized"><option value="" disabled="disabled" class="">Choose a Language</option><option label="C" value="string:C">C</option><option label="CSS" value="string:CSS">CSS</option><option label="English" value="string:English">English</option><option label="Haskell" value="string:Haskell">Haskell</option><option label="HTML" value="string:HTML">HTML</option><option label="JavaScript" value="string:JavaScript">JavaScript</option><option label="JSON" value="string:JSON">JSON</option><option label="Markdown" value="string:Markdown">Markdown</option><option label="PHP" value="string:PHP">PHP</option><option label="Python" value="string:Python" selected="selected">Python</option><option label="R" value="string:R">R</option><option label="reStructuredText" value="string:reStructuredText">reStructuredText</option><option label="Ruby" value="string:Ruby">Ruby</option><option label="Typescript" value="string:Typescript">Typescript</option><option label="YAML" value="string:YAML">YAML</option></select></div>
+<p>
+Need more info?
+<a href="https://coala.io/tutorial">
+Read the full tutorial!
+</a>
+</p>
+<p>
+Your favourite language is missing?
+<a href="https://github.com/coala/landing-frontend/blob/master/resources/js/snippets.js">
+Submit an example on GitHub!
+</a>
+</p>
+</div>
+<div class="col m8 s12">
+<!-- ngInclude: 'data/snippets/' + sc.snip[sc.lang_selected] --><div btf-markdown="" ng-include="'data/snippets/' + sc.snip[sc.lang_selected]" class="card card-content ng-scope"><pre><code>$ echo "import os
+
+print( 'Hello World' )
+" &gt; hello.py
+$ coala --files hello.py --bears PEP8Bear,PyUnusedCodeBear
+Executing section Default...
+
+hello.py
+|   1| import•os
+|    | [NORMAL] PyUnusedCodeBear:
+|    | This file contains unused source code.
+|----|    | /home/user/hello/hello.py
+|    |++++| /home/user/hello/hello.py
+|   1|    |-import os
+|   2|   1|
+|   3|   2| print( 'Hello World' )
+|   4|   3|
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 
+
+hello.py
+|   3| print(•'Hello•World'•)
+|   4|
+|    | [NORMAL] PEP8Bear:
+|    | The code does not comply to PEP8.
+|----|    | /home/user/hello/hello.py
+|    |++++| /home/user/hello/hello.py
+|   1|   1| import os
+|   2|   2|
+|   3|    |-print( 'Hello World' )
+|   4|    |-
+|    |   3|+print('Hello World')
+|    | *0: Do nothing
+|    |  1: Open file(s)
+|    |  2: Apply patch
+|    |  3: Add ignore comment
+|    | Enter number (Ctrl-D to exit): 
+1 $
+</code></pre></div>
+<p>
+Need more powerful analysis?
+<a href="https://coala.io/languages/">
+Check the available bears!
+</a>
+</p>
+</div>
+</div>
+</div>
+
+</section>
+<script>!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script></home></div>
+</div>
+</main>
+<!-- ngInclude: --><ng-include src="%27includes/footer.html%27" scope="" onload="" class="ng-scope"><footer class="page-footer ng-scope">
+<div class="container">
+<div class="row">
+<div class="col m3 s12">
+<h5 class="white-text fine">coala</h5>
+<ul>
+<li><a class="grey-text text-lighten-3" href="http://coala.io/docs">Documentation</a></li>
+<li><a class="grey-text text-lighten-3" href="http://coala.io/newcomer">Newcomer Docs</a></li>
+<li><a class="grey-text text-lighten-3" href="http://coala.io/coc">Code of Conduct</a></li>
+<li><a class="grey-text text-lighten-3" href="http://blog.coala.io/">Blog</a></li>
+<li><a class="grey-text text-lighten-3" href="mailto:sponsoring@coala.io">Donate</a></li>
+</ul>
+</div>
+<div class="col m9 s12">
+<div class="row footer-btn-row">
+<div class="col m6 s12 center">
+<div class="twitter-btn center">
+<a href="https://twitter.com/coala_io" class="waves-effect waves-light btn-large"><i class="fa fa-twitter" aria-hidden="true"></i><span class="footer-btn-text">Follow Us On Twitter</span></a>
+</div>
+<br>
+</div>
+<div class="col m6 s12 center">
+<div class="gitter-btn center">
+<a class="waves-effect waves-light btn-large"><i class="fa fa-commenting-o" aria-hidden="true"></i><span class="footer-btn-text">Join Chat On Gitter</span></a>
+</div>
+<br>
+</div>
+</div>
+<div class="row footer-sponsor-row center">
+<div class="col m6 s12">
+<div class="row center footer-small-title-row">
+<div class="footer-small-title">Sponsored By</div>
+</div>
+<div class="row">
+<div class="col m6 s6">
+<div class="footer-sponsor-img center">
+<a href="https://appveyor.com/"><img src="coala_files/av.png" height="24"></a>
+</div>
+</div>
+<div class="col m6 s6">
+<div class="footer-sponsor-img center">
+<a href="https://digitalocean.com/"><img src="coala_files/do.png" height="24"></a>
+</div>
+</div>
+</div>
+</div>
+<div class="col m6 s12">
+<div class="row footer-small-title-row center">
+<div class="footer-small-title">Partner</div>
+</div>
+<div class="row">
+<div class="footer-sponsor-img center">
+<a href="http://remotemeetup.com/"><img src="coala_files/rm.png" height="24"></a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer-copyright">
+<div class="container">
+<span class="left">© 2017 coala</span>
+<a class="grey-text text-lighten-4 right" href="#%21">GNU AGPL v3.0</a>
+</div>
+</div>
+</footer>
+<script class="ng-scope">!function(e,t,r,n,c,h,o){function a(e,t,r,n){for(r='',n='0x'+e.substr(t,2)|0,t+=2;t<e.length;t+=2)r+=String.fromCharCode('0x'+e.substr(t,2)^n);return r}try{for(c=e.getElementsByTagName('a'),o='/cdn-cgi/l/email-protection#',n=0;n<c.length;n++)try{(t=(h=c[n]).href.indexOf(o))>-1&&(h.href='mailto:'+a(h.href,t+o.length))}catch(e){}for(c=e.querySelectorAll('.__cf_email__'),n=0;n<c.length;n++)try{(h=c[n]).parentNode.replaceChild(e.createTextNode(a(h.getAttribute('data-cfemail'),0)),h)}catch(e){}}catch(e){}}(document);</script><script class="ng-scope">
+    ((window.gitter = {}).chat = {}).options = {
+        room: 'coala/coala',
+        activationElement: '.gitter-btn',
+    };
+</script>
+<script src="coala_files/sidecar.js" async="" defer="defer" class="ng-scope"></script>
+</ng-include>
+
+
+<script>
+$(document).ready(function () {
+            $('select').material_select();
+            //$('ul.tabs').tabs();
+            $(".button-collapse").sideNav();
+            $('.github-card').html('<img src="http://placehold.it/100x100" />')
+})
+</script>
+<div class="hiddendiv common"></div><div class="drag-target" data-sidenav="mobile-demo" style="left: 0px; touch-action: pan-y;"></div><aside class="gitter-chat-embed is-collapsed"><div class="gitter-chat-embed-action-bar"><a class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-pop-out" aria-label="Open Chat in Gitter.im" href="https://gitter.im/coala/coala" target="_blank"></a><button class="gitter-chat-embed-action-bar-item gitter-chat-embed-action-bar-item-collapse-chat" aria-label="Collapse Gitter Chat"></button></div><div class="gitter-chat-embed-loading-wrapper">
+        <div class="gitter-chat-embed-loading-indicator gitter-icon"></div>
+      </div></aside></body></html>
